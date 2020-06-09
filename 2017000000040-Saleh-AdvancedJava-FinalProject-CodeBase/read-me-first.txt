@@ -42,7 +42,7 @@ Why did not I use any Java based frontend framework?
 
 Reasons:
 I don't know any good and easy java based web ui frameworks, 
-yes there is Vaadin but the resources on Vaadin seems is very limited to me,
+yes there is Vaadin but the resources on Vaadin seems very limited to me,
 and I will take much time to learn Vaadin to get some work done.
 
 That's why decided to use PHP to process the frontend though PHP is a backend language.
