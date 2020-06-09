@@ -1,0 +1,53 @@
+Southeast University
+Final Assignment/Project
+
+-------------
+Assignment/Project Topic: Online Dating App
+
+------------
+Course Title: Advanced Java
+Course Code: CSE4047
+Section: 11
+Faculty Code: KMH
+
+------------
+Student Name: Saleh Ibne Omar
+Student ID: 2017000000040
+Batch: 45
+
+----------------
+Backend API link: https://adv-java-final-project-restapi.herokuapp.com/api/users
+
+API documentation link: https://adv-java-final-project-restapi.herokuapp.com/swagger-ui.html
+
+Frontend link: http://salehibneomar-adv-java-final-project.epizy.com/
+
+GitHub project link: https://github.com/salehibneomar/advanced-java-final-project
+
+Database server: freesqldatabase.com (Free account)
+
+---------------
+Description:
+
+For this final project/assignment I chose the Online Dating App topic.
+
+Tools used:
+----------
+RESTapi = Java Spring Boot
+Database = MySQL
+UI Framework = Bootstrap 4.5
+Frontend handled by = PHP 7 (cURL and Session)
+
+Why did not I use any Java based frontend framework?
+
+Reasons:
+I don't know any good and easy java based web ui frameworks, 
+yes there is Vaadin but the resources on Vaadin seems is very limited to me,
+and I will take much time to learn Vaadin to get some work done.
+
+That's why decided to use PHP to process the frontend though PHP is a backend language.
+
+
+#The app is not final it's just a demo to show how I actually planned and what I wanted to do.
+
+------- Thanks for reading -------
