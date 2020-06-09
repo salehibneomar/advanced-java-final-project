@@ -41,9 +41,9 @@ Frontend handled by = PHP 7 (cURL and Session)
 Why did not I use any Java based frontend framework?
 
 Reasons:
-I don't know any good and easy java based web ui frameworks, 
-yes there is Vaadin but the resources on Vaadin seems very limited to me,
-and I will take much time to learn Vaadin to get some work done.
+I don't know any good and easy java based web ui framework, 
+yes there is Vaadin but resources on Vaadin seems very limited to me,
+and It will take much time to learn Vaadin to get some works done.
 
 That's why decided to use PHP to process the frontend though PHP is a backend language.
 
@@ -51,3 +51,5 @@ That's why decided to use PHP to process the frontend though PHP is a backend la
 #The app is not final it's just a demo to show how I actually planned and what I wanted to do.
 
 ------- Thanks for reading -------
+
+
