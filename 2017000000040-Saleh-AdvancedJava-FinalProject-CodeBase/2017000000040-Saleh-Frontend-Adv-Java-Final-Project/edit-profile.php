@@ -76,7 +76,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit profile</title>
+    <title>Edit profile | <?=$getAllById["userName"];?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inter:200,400,600,700,800&display=swap" rel="stylesheet"> 
@@ -87,7 +87,7 @@
 
     <section class="container mb-5">
         <div class="row">
-            <div class="col-md-8 offset-md-2">
+            <div class="col-md-10 offset-md-1">
             <?php if($err){?>
                 <div class="alert alert-warning text-center" role="alert">
                    <b> <?=$err;?> </b>
@@ -98,51 +98,51 @@
                         <h5 class="text-center text-white">Edit profile</h5>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post" enctype="multipart/form-data">
-                            <div class="form-group mt-2">
+                        <form action="" class="row" method="post" enctype="multipart/form-data">
+                            <div class="form-group mt-2 col-md-6">
                             <label class="text-muted small">User Name</label>
                                 <input type="text" class="form-control" placeholder="User Name" name="user-name" value="<?=$getAllById["userName"];?>" readonly>
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 col-md-6">
                             <label class="text-muted small">Password</label>
-                                <input type="password" class="form-control " placeholder="Password" name="user-password" >
+                                <input type="password" class="form-control " name="user-password" >
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 col-md-8">
                             <label class="text-muted small">Full Name</label>
                                 <input type="text" class="form-control " placeholder="Full Name" name="user-fullname" value="<?=$getAllById["fullName"];?>">
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 col-md-4">
                             <label class="text-muted small">Age</label>
                                 <input type="number" class="form-control " placeholder="Age" min="18" name="user-age" value="<?=$getAllById["age"];?>">
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 col-md-6">
                             <label class="text-muted small">Country</label>
                                 <input type="text" class="form-control " placeholder="Country" name="user-country" value="<?=$getAllById["country"];?>">
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 col-md-6">
                             <label class="text-muted small">City</label>
                                 <input type="text" class="form-control " placeholder="City" name="user-city" value="<?=$getAllById["city"];?>">
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 col-md-6">
                             <label class="text-muted small">Area Code</label>
                                 <input type="text" class="form-control " placeholder="Area Code" name="user-areacode" value="<?=$getAllById["areaCode"];?>">
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 col-md-6">
                             <label class="text-muted small">Profession</label>
                                 <input type="text" class="form-control " placeholder="Profession" name="user-profession" value="<?=$getAllById["profession"];?>">
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 col-md-12">
                                 <label class="text-muted small">Update profile picture</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" accept='.jpg,.jpeg,.png' name="user-image">
                                     <label class="custom-file-label">Image...</label>
                                 </div>
                             </div>
-                            <div class="form-group mt-2">
+                            <div class="form-group mt-2 col-md-12">
                             <label class="text-muted small">Biography</label>
                                 <textarea name="user-bio" id="" rows="4" class="form-control" placeholder="Bio" ><?=$getAllById["bio"];?></textarea>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-md-12">
                                 <button type="submit" class="btn btn-primary mt-3" name="profile-update-btn">Update&ensp;<i class="fas fa-edit"></i></button>
                             </div>
                         </form>
