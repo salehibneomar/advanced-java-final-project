@@ -66,7 +66,7 @@
     
     <div class="container login-reg-panel mb-5">
         <div class="row">
-            <div class="col-md-8 offset-md-2">
+            <div class="col-md-10 offset-md-1">
             <?php if($err){?>
                 <div class="alert alert-warning text-center" role="alert">
                    <b> <?=$err;?> </b>
@@ -81,50 +81,54 @@
                         <h5 class="text-center">Account Registration</h5>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="User Name" name="user-name">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control mt-3" placeholder="Password" name="user-password" >
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control mt-3" placeholder="Full Name" name="user-fullname">
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="form-control mt-3" placeholder="Age" min="18" name="user-age">
-                            </div>
-                            <div class="form-group">
-                                <select name="user-gender" class="form-control">
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control mt-3" placeholder="Country" name="user-country">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control mt-3" placeholder="City" name="user-city">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control mt-3" placeholder="Area Code" name="user-areacode">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control mt-3" placeholder="Profession" name="user-profession">
-                            </div>
-                            <div class="form-group">
-                                <label class="text-muted small">Upload profile picture</label>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" accept='.jpg,.jpeg,.png' name="user-image">
-                                    <label class="custom-file-label">Image...</label>
+                        <form class="row" action="" method="post" enctype="multipart/form-data">
+                            
+                                <div class="form-group col-md-5">
+                                    <input type="text" class="form-control" placeholder="User Name" name="user-name">
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="user-bio" id="" rows="4" class="form-control" placeholder="Bio"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-success mt-3" name="reg-btn">Submit&ensp;<i class="fas fa-check-circle"></i></button>
-                            </div>
+                                <div class="form-group col-md-7">
+                                    <input type="password" class="form-control" placeholder="Password" name="user-password" >
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <input type="text" class="form-control" placeholder="Full Name" name="user-fullname">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="number" class="form-control" placeholder="Age" min="18" name="user-age">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <select name="user-gender" class="form-control">
+                                        <option value="">--Gender--</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="text" class="form-control " placeholder="Country" name="user-country">
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <input type="text" class="form-control " placeholder="City" name="user-city">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Area Code" name="user-areacode">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Profession" name="user-profession">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label class="text-muted small">Upload profile picture</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" accept='.jpg,.jpeg,.png' name="user-image">
+                                        <label class="custom-file-label">Image...</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <textarea name="user-bio" id="" rows="4" class="form-control" placeholder="Biography"></textarea>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <button type="submit" class="btn btn-success mt-3" name="reg-btn">Submit&ensp;<i class="fas fa-check-circle"></i></button>
+                                </div>
+                            
+                            
                         </form>
                     </div>
                     <div class="card-footer">
