@@ -9,6 +9,9 @@
     if(isset($_GET['uid'])){
         $url = "https://adv-java-final-project-restapi.herokuapp.com/api/user-by-id/".$_GET['uid'];
         $getAllById = $obj->getResponse($url);
+        if(is_null($getAllById)){
+            header("Location: dashboard.php");
+        }
     }
     else{
         header("Location: dashboard.php");
