@@ -62,7 +62,7 @@ footer{
 }
 
 .swal2-popup{
-    width: 35% !important;
+    width: 50% !important;
 }
 
 .swal2-title{
@@ -86,7 +86,7 @@ footer{
         width: 80%;
     }
     .swal2-popup{
-        width: 45% !important;
+        width: 60% !important;
     }
 }
 
@@ -98,7 +98,7 @@ footer{
         margin-top: 40px !important;
     }
     .swal2-popup{
-        width: 55% !important;
+        width: 70% !important;
     }
     
 }
@@ -118,6 +118,6 @@ footer{
         margin-bottom: 10px !important;
     }
     .swal2-popup{
-        width: 80% !important;
+        width: 98% !important;
     }
 }
