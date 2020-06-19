@@ -13,6 +13,8 @@
 
         public function getResponse($api_url){
             $ch = curl_init();
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 300);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 300);
 
             curl_setopt($ch, CURLOPT_URL, $api_url);
             curl_setopt($ch, CURLOPT_POST, false);
@@ -28,6 +30,8 @@
         
         public function getSingleResponseByPostingBody($api_url, $payload){
             $ch = curl_init();
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 300);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 300);
 
             curl_setopt($ch, CURLOPT_URL, $api_url);
             curl_setopt($ch, CURLINFO_HEADER_OUT, true);
@@ -50,6 +54,8 @@
 
         public function deleteRequest($api_url, $param){
             $ch = curl_init();
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 300);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 300);
 
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE"); 
             curl_setopt($ch,CURLOPT_URL,$api_url);
@@ -66,6 +72,8 @@
 
         public function postRequest($api_url, $payload){
             $ch = curl_init();
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 300);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 300);
 
             curl_setopt($ch, CURLOPT_URL, $api_url);
             curl_setopt($ch, CURLINFO_HEADER_OUT, true);
@@ -87,6 +95,8 @@
 
         public function putRequest($api_url, $payload){
             $ch = curl_init();
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 300);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 300);
 
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT"); 
             curl_setopt($ch, CURLOPT_URL, $api_url);
